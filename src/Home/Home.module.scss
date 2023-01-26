@@ -1,0 +1,265 @@
+.modal {
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  transition: 0.4s all;
+  background-color: #0f52ba;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 11px 0px 32px 1px;
+}
+fieldset {
+  width: 90%;
+  height: 80px;
+}
+.modalItemsContent {
+  padding: 1rem;
+}
+.modalClose {
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  width: 0px;
+  overflow: hidden;
+  transition: 0.4s all;
+}
+.hedModal {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  svg {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+    color: #fff !important;
+    text-align: start;
+    margin: 0;
+  }
+}
+.hedModalItems {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.itemModal {
+  width: 90%;
+  height: 80px;
+  border: none;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  legend {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    text-align: right;
+    svg {
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      cursor: pointer;
+    }
+  }
+  p {
+    width: 50%;
+  }
+  img {
+    height: 30px;
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.qtdProduto {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  p {
+    border: 1px solid #bfbfbf;
+    height: 22px;
+    width: 20px;
+    margin: 0;
+  }
+  button {
+    border: 1px solid #bfbfbf;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    height: 22px;
+    width: 20px;
+  }
+  .btA {
+    border-radius: 5px 0px 0px 5px;
+  }
+  .btB {
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+.valorTotal {
+  display: flex;
+  padding: 0 1rem;
+  color: #fff;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.footerModal {
+  flex-direction: column;
+  display: flex;
+  .block {
+    height: 100px;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}
+.home {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  background-color: #0f52ba;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40rem;
+  padding: 20px 0;
+}
+.lognav {
+  display: flex;
+  color: #fff;
+  align-items: baseline;
+  gap: 5px;
+  h2 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: 600;
+  }
+  p {
+    margin: 0;
+    font-weight: 300;
+  }
+}
+.btShop {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.shop {
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  p {
+    font-weight: 800;
+  }
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 15px 0px 0px 0px;
+  width: 200px;
+  height: 340px;
+  justify-content: end;
+  box-shadow: 0px 0px 10px -1px grey;
+  img {
+    height: 150px;
+  }
+  button {
+    background-color: #0f52ba;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 0px 0px 16px 16px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+.price {
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #373737;
+  color: #fff;
+  margin: 0;
+}
+.infoitem {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  p {
+    text-align: start;
+  }
+}
+.items {
+  gap: 1.2rem;
+  padding: 7rem 0rem;
+  max-width: 900px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pinfo {
+  font-size: small;
+  text-align: start;
+  padding: 0 8px;
+}
+footer {
+  width: 100%;
+  background-color: #eeee;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .modal {
+    width: 100%;
+  }
+  .nav {
+    gap: 4rem;
+  }
+}

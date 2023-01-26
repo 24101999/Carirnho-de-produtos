@@ -1,0 +1,186 @@
+.modal {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  transition: 0.4s all;
+  background-color: #0f52ba;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 11px 0px 32px 1px;
+}
+
+.modalItemsContent {
+  padding: 1rem;
+}
+
+.modalClose {
+  top: 0;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  width: 0px;
+  overflow: hidden;
+  transition: 0.4s all;
+}
+
+.hedModal {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hedModal button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.hedModal svg {
+  font-size: 30px;
+}
+
+.hedModal h2 {
+  font-size: 20px;
+  color: #fff !important;
+  text-align: start;
+  margin: 0;
+}
+
+.fieldsetModal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 325px;
+  padding: 13px;
+  overflow-y: scroll;
+}
+
+.fieldsetModal::-webkit-scrollbar {
+  display: none;
+}
+
+.hedModalItems {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.itemModal {
+  border: none;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.itemModal legend {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  text-align: right;
+}
+
+.itemModal legend svg {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  cursor: pointer;
+}
+
+.itemModal p {
+  width: 50%;
+}
+
+.itemModal img {
+  height: 30px;
+}
+
+.itemModal .img {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.qtdProduto {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.qtdProduto p {
+  border: 1px solid #bfbfbf;
+  height: 22px;
+  width: 20px;
+  margin: 0;
+}
+
+.qtdProduto button {
+  border: 1px solid #bfbfbf;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  height: 22px;
+  width: 20px;
+}
+
+.qtdProduto .btA {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.qtdProduto .btB {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.valorTotal {
+  display: flex;
+  padding: 0 1rem;
+  color: #fff;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.footerModal {
+  flex-direction: column;
+  display: flex;
+}
+
+.footerModal .block {
+  cursor: pointer;
+  height: 100px;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerModal .block h2 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .modal {
+    width: 100%;
+  }
+  .valorTotal {
+    padding: 0 3rem;
+  }
+  .hedModalItems {
+    gap: 1rem;
+  }
+  .fieldsetModal {
+    height: 725px;
+  }
+}
