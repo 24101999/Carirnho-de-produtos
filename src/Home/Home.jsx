@@ -31,13 +31,15 @@ function Home() {
 
     const item = copyProd.find((prod) => prod.id === id);
 
+    // let num = parseInt(item.price);
     if (!item) {
       copyProd.push({ id: id, qtd: 1 });
     } else {
       item.qtd = item.qtd + 1;
     }
+    // prod.reduce((a, b) => +a + +b.price, 0);
 
-    console.log(mditem);
+    // console.log(mditem);
 
     setProd(copyProd);
   };
@@ -121,7 +123,7 @@ function Home() {
       </nav>
       <div className={styles.items}>
         {dados
-          ? dados.map((d, i) => {
+          ? dados.map((d) => {
               return (
                 <div key={d.id} className={styles.item}>
                   <img src={d.photo} alt="" />
